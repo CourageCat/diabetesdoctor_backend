@@ -1,0 +1,27 @@
+﻿global using MediatR;
+global using Mapster;
+global using MongoDB.Bson;
+global using MongoDB.Driver;
+global using FluentValidation;
+global using System.Reflection;
+global using Microsoft.Extensions.Hosting;
+global using Microsoft.Extensions.Options;
+global using Microsoft.Extensions.DependencyInjection;
+global using ChatService.Contract.Helpers;
+global using ChatService.Contract.Abstractions.Message;
+global using ChatService.Contract.Abstractions.Shared;
+global using ChatService.Contract.Common.Messages;
+global using ChatService.Contract.Common.Constraint;
+global using ChatService.Contract.Common.DomainErrors;
+global using ChatService.Contract.Exceptions.BusinessExceptions;
+global using ChatService.Contract.Settings;
+global using ChatService.Contract.EventBus.Events.ConversationIntegrationEvents;
+global using ChatService.Contract.Services.Conversation.Responses;
+global using ChatService.Domain.Enums;
+global using ChatService.Domain.Models;
+global using ChatService.Domain.ValueObjects;
+global using ChatService.Domain.DomainEvents.Conversation;
+global using ChatService.Domain.Abstractions;
+global using ChatService.Domain.Abstractions.Repositories;
+global using ChatService.Application.Helpers;
+

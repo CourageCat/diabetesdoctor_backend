@@ -1,0 +1,11 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+**/obj/
+
+.vs
+/src/MediaService.Web/appsettings.Development.json
+/src/MediaService.AppHost/appsettings.json
+/src/MediaService.AppHost/appsettings.Development.json

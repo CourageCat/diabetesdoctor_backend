@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="Ardalis.SmartEnum" Version="8.2.0" />
+		<PackageReference Include="Aspire.Confluent.Kafka" Version="9.3.1" />
+		<PackageReference Include="CloudinaryDotNet" Version="1.27.5" />
+		<PackageReference Include="FluentValidation" Version="11.8.0" />
+		<PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.0" />
+		<PackageReference Include="Mapster" Version="7.4.0" />
+		<PackageReference Include="MediatR" Version="12.4.1" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="LinqKit" Version="1.3.8" />
+		<PackageReference Include="MongoDB.Driver" Version="3.2.0" />
+		<PackageReference Include="Scrutor" Version="6.1.0" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <Folder Include="DTOs\FavouriteCategoryDTOs\" />
+	  <Folder Include="Services\BookMark\Validators\" />
+	  <Folder Include="Services\Like\Validators\" />
+	</ItemGroup>
+</Project>

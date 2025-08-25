@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ChatService.Contract\ChatService.Contract.csproj" />
+        <ProjectReference Include="..\ChatService.Domain\ChatService.Domain.csproj" />
+        <ProjectReference Include="..\ChatService.Persistence\ChatService.Persistence.csproj" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <ProjectReference Include="..\ChatService.Contract\ChatService.Contract.csproj" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Compile Remove="UseCase\V1\DomainEvents\Conversation\ConversationCreatedEventHandler.cs" />
+      <Compile Remove="UseCase\V1\DomainEvents\Conversation\ConversationDeletedEventHandler.cs" />
+      <Compile Remove="UseCase\V1\DomainEvents\Conversation\ConversationUpdatedEventHandler.cs" />
+    </ItemGroup>
+    
+</Project>

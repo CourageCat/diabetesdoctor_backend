@@ -1,0 +1,11 @@
+﻿namespace MediaService.Contract.Enumarations.User;
+
+public enum RoleType
+{
+    SystemAdmin = 0,
+    Moderator = 1,
+    HospitalStaff = 2,
+    Doctor = 3,
+    Patient = 4,
+    HospitalAdmin = 5
+}

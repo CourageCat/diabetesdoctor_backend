@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Asp.Versioning.Http" Version="8.1.0" />
+		<PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
+		<PackageReference Include="Carter" Version="8.0.0" />
+		<PackageReference Include="Grpc.AspNetCore" Version="2.71.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\UserService.Contract\UserService.Contract.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Protos\Client\" />
+	  <Folder Include="Protos\Server\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Protobuf Include="Protos\Server\UserPackage\userPackage.proto">
+			<GrpcServices>Both</GrpcServices>
+		</Protobuf>
+	</ItemGroup>
+</Project>

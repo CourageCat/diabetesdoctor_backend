@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Documents\\FPT\\Capstone\\diabetesdoctor_tutorial\\diabetedoctor_Chat-Service\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB97F1E-3782-49F6-A430-BA4F3733A19F}|src\\ChatService.Web\\ChatService.Web.csproj|f:\\documents\\fpt\\capstone\\diabetesdoctor_tutorial\\diabetedoctor_chat-service\\src\\chatservice.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7DB97F1E-3782-49F6-A430-BA4F3733A19F}|src\\ChatService.Web\\ChatService.Web.csproj|solutionrelative:src\\chatservice.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63D33664-61F2-4D0B-839E-F2047245DE4C}|src\\ChatService.Contract\\ChatService.Contract.csproj|f:\\documents\\fpt\\capstone\\diabetesdoctor_tutorial\\diabetedoctor_chat-service\\src\\chatservice.contract\\settings\\kafkasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63D33664-61F2-4D0B-839E-F2047245DE4C}|src\\ChatService.Contract\\ChatService.Contract.csproj|solutionrelative:src\\chatservice.contract\\settings\\kafkasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63D33664-61F2-4D0B-839E-F2047245DE4C}|src\\ChatService.Contract\\ChatService.Contract.csproj|f:\\documents\\fpt\\capstone\\diabetesdoctor_tutorial\\diabetedoctor_chat-service\\src\\chatservice.contract\\settings\\appdefaultsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63D33664-61F2-4D0B-839E-F2047245DE4C}|src\\ChatService.Contract\\ChatService.Contract.csproj|solutionrelative:src\\chatservice.contract\\settings\\appdefaultsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KafkaSettings.cs",
+              "DocumentMoniker": "F:\\Documents\\FPT\\Capstone\\diabetesdoctor_tutorial\\diabetedoctor_Chat-Service\\src\\ChatService.Contract\\Settings\\KafkaSettings.cs",
+              "RelativeDocumentMoniker": "src\\ChatService.Contract\\Settings\\KafkaSettings.cs",
+              "ToolTip": "F:\\Documents\\FPT\\Capstone\\diabetesdoctor_tutorial\\diabetedoctor_Chat-Service\\src\\ChatService.Contract\\Settings\\KafkaSettings.cs",
+              "RelativeToolTip": "src\\ChatService.Contract\\Settings\\KafkaSettings.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwBgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T21:59:28.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\Documents\\FPT\\Capstone\\diabetesdoctor_tutorial\\diabetedoctor_Chat-Service\\src\\ChatService.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\ChatService.Web\\appsettings.json",
+              "ToolTip": "F:\\Documents\\FPT\\Capstone\\diabetesdoctor_tutorial\\diabetedoctor_Chat-Service\\src\\ChatService.Web\\appsettings.json",
+              "RelativeToolTip": "src\\ChatService.Web\\appsettings.json",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-25T21:58:10.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDefaultSettings.cs",
+              "DocumentMoniker": "F:\\Documents\\FPT\\Capstone\\diabetesdoctor_tutorial\\diabetedoctor_Chat-Service\\src\\ChatService.Contract\\Settings\\AppDefaultSettings.cs",
+              "RelativeDocumentMoniker": "src\\ChatService.Contract\\Settings\\AppDefaultSettings.cs",
+              "ToolTip": "F:\\Documents\\FPT\\Capstone\\diabetesdoctor_tutorial\\diabetedoctor_Chat-Service\\src\\ChatService.Contract\\Settings\\AppDefaultSettings.cs",
+              "RelativeToolTip": "src\\ChatService.Contract\\Settings\\AppDefaultSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T21:58:34.264Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

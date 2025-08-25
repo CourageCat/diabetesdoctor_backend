@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "ConsultationService.Application.Protos.Client.UserPackage";
+
+package userPackage;
+
+// The wallet service definition.
+service UserPackage {
+  rpc CheckSessionRemaining (CheckSessionRemainingRequest) returns (CheckSessionRemainingResponse);
+}
+
+// The request message containing the user's id.
+message CheckSessionRemainingRequest {
+  string userId = 1;
+}
+
+// The response message containing the status.
+message CheckSessionRemainingResponse {
+  bool isSuccess = 1;
+  double price = 2;
+  string userPackageId = 3;
+}

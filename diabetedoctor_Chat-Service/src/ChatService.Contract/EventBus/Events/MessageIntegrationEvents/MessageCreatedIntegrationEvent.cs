@@ -1,0 +1,33 @@
+﻿using ChatService.Contract.DTOs.ValueObjectDtos;
+using ChatService.Contract.Enums;
+
+namespace ChatService.Contract.EventBus.Events.MessageIntegrationEvents;
+
+public record MessageCreatedIntegrationEvent : IntegrationEvent
+{
+    // public SenderInfo? Sender { get; init; }
+    // public ConversationInfo? Conversation { get; init; }
+    public string SenderId { get; init; } = null!;
+    public string ConversationId { get; init; } = null!;
+    public ConversationTypeEnum ConversationType {get; init; }
+    public string MessageId { get; init; } = null!;
+    public string? MessageContent { get; init; } = null!;
+    public MessageTypeEnum MessageType { get; init; }
+    public FileAttachmentDto? FileAttachment { get; init; }
+    public DateTime CreatedDate { get; init; }
+}
+
+public record SenderInfo
+{
+    public string? SenderId { get; init; }
+    public string? FullName { get; init; }
+    public string? Avatar { get; init; }
+}
+
+public record ConversationInfo
+{
+    public string? ConversationId { get; init; }
+    // public string? ConversationName { get; init; }
+    // public string? Avatar { get; init; }
+    public int ConversationType {get; init; }
+}

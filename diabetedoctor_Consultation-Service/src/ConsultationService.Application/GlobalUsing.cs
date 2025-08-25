@@ -1,0 +1,12 @@
+global using MediatR;
+global using MongoDB.Bson;
+global using MongoDB.Driver;
+global using ConsultationService.Contract.Attributes;
+global using ConsultationService.Contract.Abstractions.Message;
+global using ConsultationService.Contract.Abstractions.Shared;
+global using ConsultationService.Contract.Common.Messages;
+global using ConsultationService.Contract.Common.DomainErrors;
+global using ConsultationService.Domain.Models;
+global using ConsultationService.Domain.ValueObjects;
+global using ConsultationService.Domain.Abstractions;
+global using ConsultationService.Domain.Abstractions.Repositories;

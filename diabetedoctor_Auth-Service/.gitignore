@@ -1,0 +1,14 @@
+bin/
+obj/
+debug/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+**/obj/
+
+.idea
+.vs
+
+/src/AuthService.Api/appsettings.Development.json
+/src/AuthService.Api/appsettings.json
+

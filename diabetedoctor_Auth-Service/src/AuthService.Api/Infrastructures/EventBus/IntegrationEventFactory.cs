@@ -1,0 +1,58 @@
+﻿using AuthService.Api.Infrastructures.Abstractions.EventsBus;
+using AuthService.Api.Infrastructures.Abstractions.EventsBus.Message;
+using System.Reflection;
+using System.Text.Json;
+
+namespace AuthService.Api.Infrastructures.EventBus;
+
+public class IntegrationEventFactory : IIntegrationEventFactory
+{
+    public IntegrationEvent? CreateEvent(string typeName, string value)
+    {
+        var t = GetEventType(typeName);
+        
+        return t is not null ? JsonSerializer.Deserialize(value, t) as IntegrationEvent : null;
+    }
+    
+    private static Type? GetEventType(string type)
+    {
+        var t = Type.GetType(type);
+        
+        try
+        {
+            return t ?? AssemblyReference.Assembly
+                .GetTypes()
+                .FirstOrDefault(aType => aType.Name == type);
+        }
+        catch (ReflectionTypeLoadException ex)
+        {
+            return ex.Types.FirstOrDefault(x => x?.Name == type);
+        }
+    }
+
+    public static readonly IntegrationEventFactory Instance = new();
+}
+
+public class IntegrationEventFactory<TEvent> : IIntegrationEventFactory
+{
+    private static readonly Assembly IntegrationEventAssembly = typeof(TEvent).Assembly;
+
+    public IntegrationEvent? CreateEvent(string typeName, string value)
+    {
+        var t = GetEventType(typeName) ?? throw new ArgumentException($"Type {typeName} not found");
+
+        return JsonSerializer.Deserialize(value, t) as IntegrationEvent;
+    }
+
+    private static Type? GetEventType(string typeName)
+    {
+        var t = IntegrationEventAssembly.GetTypes()
+            .FirstOrDefault(t => t.Name == typeName);
+
+        return t ?? AppDomain.CurrentDomain.GetAssemblies()
+            .SelectMany(a => a.GetTypes())
+            .FirstOrDefault(aType => aType.Name == typeName);
+    }
+
+    public static readonly IntegrationEventFactory<TEvent> Instance = new();
+}

@@ -1,0 +1,47 @@
+# Visual Studio
+.vs/
+
+# Build outputs
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs and caches
+*.log
+*.cache
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# NuGet packages
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Entity Framework migrations
+Migrations/
+
+# ASP.NET & Blazor
+appsettings*.json
+secrets.json
+
+# Publish outputs
+publish/
+wwwroot/
+
+# Docker
+docker-compose.override.yml

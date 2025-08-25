@@ -1,0 +1,29 @@
+﻿using ChatService.Contract.Attributes;
+
+namespace ChatService.Contract.Common.Messages;
+
+public enum UserMessage
+{
+    [Message("Danh sách người dùng", "user_1")]
+    AvailableUsers,
+    
+    
+    // error
+    [Message("Người dùng không tồn tại hoặc đã bị cấm khỏi hệ thống", "user_er_1")]
+    UserNotFound,
+    
+    [Message("Nhân viên không tồn tại hoặc đã bị cấm khỏi hệ thống", "user_er_1")]
+    StaffNotFound,
+    
+    [Message("Bác sĩ không tồn tại hoặc đã bị cấm khỏi hệ thống", "user_er_1")]
+    DoctorNotFound,
+    
+    [Message("Role không phù hợp", "user_er_2")]
+    MustHaveThisRole,
+    
+    [Message("Bác sĩ không trực thuộc bệnh viện", "user_er_3")]
+    DoctorNotBelongToHospital,
+    
+    [Message("Nhân viên không trực thuộc bệnh viện", "user_er_04")]
+    StaffNotBelongToHospital
+}

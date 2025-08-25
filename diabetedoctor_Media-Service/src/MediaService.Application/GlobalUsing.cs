@@ -1,0 +1,15 @@
+﻿global using System.Reflection;
+global using System.Reflection.Metadata;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Hosting;
+global using FluentValidation;
+global using System.Linq.Expressions;
+global using MediaService.Contract.Abstractions.Message;
+global using Mapster;
+global using MediaService.Contract.Helpers;
+global using Microsoft.Extensions.Options;
+global using MediaService.Contract.Abstractions.Shared;
+global using MediaService.Contract.Common.Messages;
+global using MediaService.Contract.Settings;
+global using MediaService.Contract.Exceptions.BussinessExceptions;
+global using MediaService.Domain.Abstractions;

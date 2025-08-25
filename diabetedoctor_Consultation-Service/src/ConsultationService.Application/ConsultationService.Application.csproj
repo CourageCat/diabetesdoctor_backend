@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ConsultationService.Contract\ConsultationService.Contract.csproj" />
+      <ProjectReference Include="..\ConsultationService.Domain\ConsultationService.Domain.csproj" />
+      <ProjectReference Include="..\ConsultationService.Persistence\ConsultationService.Persistence.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="UseCase\V1\IntegrationCommands\Users\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Grpc.AspNetCore" Version="2.71.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Protobuf Include="Protos\Client\UserPackage\userPackage.proto">
+        <GrpcServices>Both</GrpcServices>
+      </Protobuf>
+    </ItemGroup>
+
+</Project>

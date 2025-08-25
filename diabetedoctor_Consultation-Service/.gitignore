@@ -1,0 +1,10 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+.idea
+/src/ConsultationService.Web/appsettings.json
+/src/ConsultationService.Web/appsettings.Development.json
+/src/ConsultationService.AppHost/appsettings.json
+/src/ConsultationService.AppHost/appsettings.Development.json

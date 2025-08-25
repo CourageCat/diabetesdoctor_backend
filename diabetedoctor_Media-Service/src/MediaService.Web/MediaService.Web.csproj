@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="appsettings.development.json" />
+    <Content Include="..\..\.dockerignore">
+      <Link>.dockerignore</Link>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="appsettings.development.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+	<PackageReference Include="MicroElements.Swashbuckle.FluentValidation" Version="6.1.0" />
+	<PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="7.1.0" />
+	<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.12" />
+	<PackageReference Include="Microsoft.IdentityModel.Protocols" Version="8.3.0" />
+	<PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="8.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MediaService.Application\MediaService.Application.csproj" />
+    <ProjectReference Include="..\MediaService.Contract\MediaService.Contract.csproj" />
+    <ProjectReference Include="..\MediaService.Infrastructure\MediaService.Infrastructure.csproj" />
+    <ProjectReference Include="..\MediaService.Persistence\MediaService.Persistence.csproj" />
+    <ProjectReference Include="..\MediaService.Presentation\MediaService.Presentation.csproj" />
+    <ProjectReference Include="..\MediaService.ServiceDefaults\MediaService.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.12" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+        <PackageReference Include="MicroElements.Swashbuckle.FluentValidation" Version="6.1.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="7.1.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.12" />
+        <PackageReference Include="Microsoft.IdentityModel.Protocols" Version="8.3.0" />
+        <PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="8.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ChatService.Application\ChatService.Application.csproj" />
+        <ProjectReference Include="..\ChatService.Contract\ChatService.Contract.csproj" />
+        <ProjectReference Include="..\ChatService.Infrastructure\ChatService.Infrastructure.csproj" />
+        <ProjectReference Include="..\ChatService.Persistence\ChatService.Persistence.csproj" />
+        <ProjectReference Include="..\ChatService.Presentation\ChatService.Presentation.csproj" />
+        <ProjectReference Include="..\ChatService.ServiceDefaults\ChatService.ServiceDefaults.csproj" />
+    </ItemGroup>
+
+</Project>
